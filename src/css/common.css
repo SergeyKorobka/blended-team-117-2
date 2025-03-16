@@ -1,0 +1,46 @@
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  margin: -1px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 0.93;
+  color: #173a56;
+}
+
+.button {
+  min-width: 130px;
+  border-radius: 4px;
+  padding: 14px 42px;
+
+  font-weight: 700;
+  line-height: 1.5;
+  color: #fff;
+
+  background-color: #02897a;
+
+  transition: background-color 200ms ease-in-out;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #016c5f;
+}
+
+.section {
+  padding: 50px 0;
+}
