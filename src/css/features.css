@@ -1,0 +1,111 @@
+.strategies-title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.strategies-sub-title {
+  margin-bottom: 40px;
+  font-weight: 500;
+  line-height: 1.625;
+}
+
+.strategies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px;
+}
+
+.strategies-item {
+  width: 100%;
+}
+
+.strategies-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.strategies-thumb {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.strategies-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: #028979a4;
+
+  line-height: 1.514;
+  color: #fff;
+
+  transform: translateY(100%);
+  transition: transform 200ms ease-in-out;
+}
+
+.strategies-link:hover .strategies-overlay,
+.strategies-link:focus .strategies-overlay {
+  transform: translateY(0);
+}
+
+.strategies-text {
+  margin-bottom: 12px;
+  line-height: 1.75;
+}
+
+.strategies-part-text {
+  font-weight: 700;
+}
+
+.strategies-card-title {
+  max-width: 294px;
+  font-size: 24px;
+  line-height: 1.67;
+
+  transition: color 200ms ease-in-out;
+}
+
+.strategies-link:hover .strategies-card-title,
+.strategies-link:focus .strategies-card-title {
+  color: #02897a;
+}
+
+@media screen and (max-width: 1149px) {
+  .strategies-content {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .strategies-title {
+    margin-bottom: 10px;
+  }
+
+  .strategies-sub-title {
+    max-width: 465px;
+  }
+
+  .strategies-list {
+    gap: 30px;
+  }
+
+  .strategies-item {
+    width: calc((100% - 60px) / 3);
+  }
+
+  .strategies-link {
+    border: 1px solid #dedede;
+  }
+
+  .strategies-content {
+    padding: 24px 24px 40px;
+  }
+}
